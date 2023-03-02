@@ -6,19 +6,6 @@ const bcrypt = require('bcryptjs');
 
 
 require('../database/conn');
-// const User = require('../models/userSchema');
-// const Admin = require('../models/adminSchema');
-// const Salecar = require('../models/salecarSchema');
-// const Cart = require('../models/cartSchema');
-// const Rentcar = require('../models/rentcarSchema');
-// const Rentcart = require('../models/rentcartSchema');
-// const Salecarincomes = require('../models/saleCarIncomeSchema');
-// const Rentcarincomes = require('../models/rentCarIncomeSchema');
-// const Salecarreviews = require('../models/carreviewSchema');
-// const Rentcarreviews = require('../models/rentcarreviewSchema');
-
-
-
 
 router.get('/', (req, res) =>{
     res.send('home page router')
@@ -32,7 +19,7 @@ router.use(require('../clientSideModules/signout'))
 router.use(require('../clientSideModules/getdata'))
 router.use(require('../clientSideModules/contactform'))
 
-// Client Side Modules ---for-- Sale Cars
+// Client Side Modules 
 router.use(require('../clientSideModules/displayallsalecars'))
 router.use(require('../clientSideModules/exploreallsalecars'))
 router.use(require('../clientSideModules/salecarsearch'))
@@ -43,7 +30,7 @@ router.use(require('../clientSideModules/deletesalecartitem'))
 router.use(require('../clientSideModules/paymentmethodsalecars'))
 router.use(require('../clientSideModules/updatedbaftersoldcar'))
 
-// Client Side Modules ---for-- Rent Cars
+// Client Side Modules 
 router.use(require('../clientSideModules/displayallrentcars'))
 router.use(require('../clientSideModules/exploreallrentcars'))
 router.use(require('../clientSideModules/rentcarsearch'))
@@ -63,13 +50,13 @@ router.use(require('../adminSideModules/signinadmin'))
 router.use(require('../adminSideModules/signoutadmin'))
 router.use(require('../adminSideModules/getadmindata'))
 
-// Admin Side Modules---for--- Sale Cars
+// Admin Side Modules
 router.use(require('../adminSideModules/addsalecars'))
 router.use(require('../adminSideModules/getallsalecars'))
 router.use(require('../adminSideModules/deletesalecars'))
 router.use(require('../adminSideModules/incomeforsalecars'))
 
-// Admin Side Modules---for--- Rent Cars
+// Admin Side Modules
 router.use(require('../adminSideModules/addrentcars'))
 router.use(require('../adminSideModules/getallrentcars'))
 router.use(require('../adminSideModules/incomeforrentcars'))
@@ -78,11 +65,6 @@ router.use(require('../adminSideModules/incomeforrentcars'))
 router.use(require('../adminSideModules/deleteuser'))
 router.use(require('../adminSideModules/getallusers'))
 router.use(require('../adminSideModules/deletemessage'))
-
-
-
-
-
 
 
 

@@ -1,5 +1,4 @@
-# carsclub
-buy a car &amp; rent a car mern stack application
+# cars
 
 MERN Stack Application --
 Login / Logout functionality --
@@ -8,4 +7,3 @@ Buy a Car & Rent a Car system --
 Add to cart functionality --
 Contact Us functionality --
 Basic Admin Dashboard --
-Payment Method (Stripe) --
